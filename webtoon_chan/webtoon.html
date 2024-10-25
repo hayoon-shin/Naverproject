@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naver_Webtoon</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        /*header part*/
+        header{
+            margin: 10px;
+            width: 1246px;
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-around;
+        }
+        .webtoon_title{
+            display: flex;
+            margin: 10px;
+            padding: 10px;
+        }
+        h3 a {
+            margin-right: 10px;
+        }
+        .webtoon_title_side{
+            display: flex;
+        }
+        .webtoon_find{
+            padding: 10px;
+            height: 20px;
+        }
+        a.login{
+            border: 0.5px solid rgba(0, 0, 0, 0.3);
+            font-size: small;
+            width: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="webtoon_title">
+            <h3><a href="#"> NAVER </a></h3>
+            <h2 class="name"><a href="#"> 웹툰</a></h2>
+            <h2 class="subname"><a href="#"> | 웹소설</a></h2>
+            <h2 class="subname"><a href="#"> | 시리즈</a></h2>
+        </div>
+        <div class="webtoon_title_side">
+            <div class="webtoon_find">
+                <label for="find"></label>
+                <input type="text" name="find" id="find" value="제목/작가로 검색할 수 있습니다.">
+                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <span><a class="login" href="#"> 로그인 </a></span>
+            <button><img src="./mige_webtoon/메뉴.png" alt="menu"></button>
+        </div>
+    </header>
+
+    <nav>
+
+    </nav>
+</body>
+</html>
