@@ -62,35 +62,35 @@
         }
         /*nav part*/
         nav{
-            margin: 10px;
+            margin-left: 30px;
             width: 1246px;
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
         .nav_title{
+            text-align: center;
             height: 60px;
-            display: flex;
-            align-items: center;    
+            display: flex;    
         }
         h3.nav_1{
             background-color: rgb(0, 220, 100);
-            margin: 20px;
-            height: 60px;
-            width: 40px;
+            width: 60px;
             color: white;
-            text-align: center;
+           
         }
         h3.nav_2{
             margin: 20px;
             height: 60px;
-            text-align: center;
+
         }
 
         /*main part*/
         /* article one*/
         article.one{
-            margin: 10px;
+            margin-left: 30px;
+            margin-top: 20px;
+            margin-bottom: 20px;
             width: 1246px;
             display: flex;
             justify-content: space-between;
@@ -127,11 +127,20 @@
 
          /* article two*/
          article.two{
-            margin: 10px;
+            margin-left: 30px;
             width: 1246px;
             display: flex;
             justify-content: space-between;
             align-items: center;
+        }
+        .two img{
+            width: 229px;
+            height: 363px;
+            transition: all 0.3s linear;
+            overflow: hidden;
+        }
+        .two img:hover{
+            transform: scale(1.1);
         }
         
         /* article three*/
@@ -197,6 +206,12 @@
             color: rgb(0, 0, 0);
             text-shadow: -3px -3px 0px rgba(255,255,255,1);
         }
+        .hot_catoon a{
+            color: black;
+        }
+        .hot_catoon a:hover{
+            text-decoration: underline;
+        }
         .hot_catoon img{
             width: 160px;
             height: 200px;
@@ -205,7 +220,7 @@
 
         /*이달의 신작 */
         .new{
-            margin-top: 30px;
+            margin-top: 40px;
             margin-bottom: 5px;
             display: flex;
             justify-content: space-between;
@@ -228,8 +243,95 @@
             line-height: 120%;
             font-size: small;
         }
-        
+        .new_hash a{
+            background-color: rgba(246, 246, 246, 1);
+            color: rgba(0,0,0,0.5);
+            font-weight: 500;
+            margin-right: 10px;
+            border-radius: 5%;
+        }
+        .new_hash a:hover{
+            background-color: rgba(200, 200, 200, 1);
+        }
 
+        /*새로운 베스트도전 */
+        .challenge{
+            margin-top: 50px;
+            margin-bottom: 5px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .challenge_new{
+            width: 250px;
+        }
+        .challenge_new span{
+            padding-right: 10px;
+            font-weight: 600;
+        }
+
+        /*추천 베스트도전&도전만화*/
+        .challenge_new p{
+            line-height: 120%;
+            font-size: small;
+        }
+        .challenge_new img{
+            margin-bottom: 10px;
+        }
+        .challenge_push_title{
+            width: 560px;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+        .challenge_push_webtoon{
+            display: flex;
+            width: 560px;
+        }
+        .challenge_push_webtoon_t{
+            display: flex;
+        }
+        .challenge_push_webtoon_t img{
+            margin-top: 10px;
+            margin-right: 5px;
+        }
+        .challenge_push_webtoon_t_text{
+            margin-right: 5px;
+        }
+        .challenge_push_webtoon_t_text a{
+            color: black;
+        }
+        .challenge_push_webtoon_t_text img{
+            margin-top: 10px;
+        }
+
+        /*따끈따끈 업데이트 메일+*/
+        .every{
+            margin-top: 50px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .everywebtoon{
+            display: flex;
+            justify-content: space-between;
+        }
+        .everywebtoon img{
+            width: 160px;           
+        }
+        /*웹툰 세트 할인*/
+        .discount{
+            margin-top: 50px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .discountwebtoon{
+            display: flex;
+            justify-content: space-between;
+        }
+        .discountwebtoon img{
+            width: 160px;           
+        }
     </style>
 </head>
 <body>
@@ -274,11 +376,11 @@
             <a href="#">금요웹툰 전체보기 <span>></span></a>
         </article>
         <article class="two">
-            <img src="./mige_webtoon/maincatoon.png" alt="외모지상주의">
-            <img src="./mige_webtoon/maincatoon.png" alt="외모지상주의">
-            <img src="./mige_webtoon/maincatoon.png" alt="외모지상주의">
-            <img src="./mige_webtoon/maincatoon.png" alt="외모지상주의">
-            <img src="./mige_webtoon/maincatoon.png" alt="외모지상주의">
+            <a href="#"><img src="./mige_webtoon/maincatoon.png" alt="외모지상주의"></a>
+            <a href="#"><img src="./mige_webtoon/maincatoon.png" alt="외모지상주의"></a>
+            <a href="#"><img src="./mige_webtoon/maincatoon.png" alt="외모지상주의"></a>
+            <a href="#"><img src="./mige_webtoon/maincatoon.png" alt="외모지상주의"></a>
+            <a href="#"><img src="./mige_webtoon/maincatoon.png" alt="외모지상주의"></a>
         </article>
         <article class="three">
             <div class="hot">
@@ -300,32 +402,32 @@
                 </ul>
                 <div class="hot_catoon">
                     <div class="hot_catoon_p">
-                        <img src="./mige_webtoon/sub.png" alt="소꿉친구">
+                        <a href="#"><img src="./mige_webtoon/sub.png" alt="소꿉친구"></a>
                         <p>1</p>
                     </div>
                     <div class="hot_catoon_p">
-                        <img src="./mige_webtoon/sub.png" alt="소꿉친구">
+                        <a href="#"><img src="./mige_webtoon/sub.png" alt="소꿉친구"></a>
                         <p>2</p>
                     </div>
                     <div class="hot_catoon_p">
-                        <img src="./mige_webtoon/sub.png" alt="소꿉친구">
+                        <a href="#"><img src="./mige_webtoon/sub.png" alt="소꿉친구"></a>
                         <p>3</p>
                     </div>
                     <div class="hot_catoon_p">
-                        <img src="./mige_webtoon/sub.png" alt="소꿉친구">
+                        <a href="#"><img src="./mige_webtoon/sub.png" alt="소꿉친구"></a>
                         <p>4</p>
                     </div>
                     <div class="hot_catoon_p">
-                        <img src="./mige_webtoon/sub.png" alt="소꿉친구">
+                        <a href="#"><img src="./mige_webtoon/sub.png" alt="소꿉친구"></a>
                         <p>5</p>
                     </div>
                 </div>
                 <div class="hot_catoon">
-                    <p>소꿉친구 컴플렉스</p>
-                    <p>소꿉친구 컴플렉스</p>
-                    <p>소꿉친구 컴플렉스</p>
-                    <p>소꿉친구 컴플렉스</p>
-                    <p>소꿉친구 컴플렉스</p>
+                    <a href="#"><p>소꿉친구 컴플렉스</p></a>
+                    <a href="#"><p>소꿉친구 컴플렉스</p></a>
+                    <a href="#"><p>소꿉친구 컴플렉스</p></a>
+                    <a href="#"><p>소꿉친구 컴플렉스</p></a>
+                    <a href="#"><p>소꿉친구 컴플렉스</p></a> 
                 </div>
                 <div class="new">
                     <h3>이달의 신작</h3>
@@ -333,28 +435,130 @@
                 </div>
                 <div class="newcartoon">
                     <div class="newcartoon_t">
-                        <img src="./mige_webtoon/newcartoon.png" alt="new">
-                        <h3>들개</h3>
+                        <a href="#"><img src="./mige_webtoon/newcartoon.png" alt="new"></a>
+                        <h4>들개</h4>
                         <p><span>김판교</span></p>
                         <p>한적한 시골 마을 구암리로 전학생 이승화가 온다. 다짜고짜 반장 우호영을 마구 때린 후 반 친..</p>
                         <div class="new_hash">
-                            <a href="#">드라마</a>
-                            <a href="#">절망적인</a>
-                            <a href="#">사회고발</a>
+                            <a href="#">#드라마</a>
+                            <a href="#">#절망적인</a>
+                            <a href="#">#사회고발</a>
                         </div>
                     </div>
                     <div class="newcartoon_t">
-                        <img src="./mige_webtoon/newcartoon.png" alt="new">
-                        <h3>들개</h3>
+                        <a href="#"><img src="./mige_webtoon/newcartoon.png" alt="new"></a>
+                        <h4>들개</h4>
                         <p><span>김판교</span></p>
                         <p>한적한 시골 마을 구암리로 전학생 이승화가 온다. 다짜고짜 반장 우호영을 마구 때린 후 반 친..</p>
+                        <div class="new_hash">
+                            <a href="#">#드라마</a>
+                            <a href="#">#절망적인</a>
+                            <a href="#">#사회고발</a>
+                        </div>
                     </div>
                     <div class="newcartoon_t">
-                        <img src="./mige_webtoon/newcartoon.png" alt="new">
-                        <h3>들개</h3>
+                        <a href="#"><img src="./mige_webtoon/newcartoon.png" alt="new"></a>
+                        <h4>들개</h4>
                         <p><span>김판교</span></p>
                         <p>한적한 시골 마을 구암리로 전학생 이승화가 온다. 다짜고짜 반장 우호영을 마구 때린 후 반 친..</p>
+                        <div class="new_hash">
+                            <a href="#">#드라마</a>
+                            <a href="#">#절망적인</a>
+                            <a href="#">#사회고발</a>
+                        </div>
                     </div>
+                </div>
+                <div class="challenge">
+                    <div class="challenge_new">
+                        <h3>새로운 베스트도전</h3>
+                        <br>
+                        <a href="#"><img src="./mige_webtoon/challenge.png" alt="궁사랑"></a>
+                        <h4>궁 사랑</h4>
+                        <p><span>글 융공 그림 아가</span></p>
+                        <p>조선 전기 퓨전 사극 로맨스 드라마. 뛰어난 활솜씨로 양반 남자들만 가득한 활 동호회에 들어간 평민 신분의 ...</p>
+                    </div>
+                    <div class="challenge_push">
+                        <div class="challenge_push_title">
+                            <h3>추천 베스트도전 & 도전만화</h3>
+                            <a href="">베스트도전 전체보기 <span>></span></a>
+                        </div>
+                        <div class="challenge_push_webtoon">
+                            <div class="challenge_push_webtoon1">
+                                <div class="challenge_push_webtoon_t">
+                                    <a href="#"><img src="./mige_webtoon/challenge_push.png" alt="별새의여행자"></a>
+                                    <div class="challenge_push_webtoon_t_text">
+                                        <a href=""><h4><img src="./mige_webtoon/up.png" alt="up"> 별새의 여행자</h4></a>
+                                        <a href=""><p>티스텔라</p></a>
+                                        <img src="./mige_webtoon/star.png" alt="별점">
+                                    </div>
+                                </div>
+                                <div class="challenge_push_webtoon_t">
+                                    <a href="#"><img src="./mige_webtoon/challenge_push.png" alt="별새의여행자"></a>
+                                    <div class="challenge_push_webtoon_t_text">
+                                        <a href=""><h4><img src="./mige_webtoon/up.png" alt="up"> 별새의 여행자</h4></a>
+                                        <a href=""><p>티스텔라</p></a>
+                                        <img src="./mige_webtoon/star.png" alt="별점">
+                                    </div>
+                                </div>
+                                <div class="challenge_push_webtoon_t">
+                                    <a href="#"><img src="./mige_webtoon/challenge_push.png" alt="별새의여행자"></a>
+                                    <div class="challenge_push_webtoon_t_text">
+                                        <a href=""><h4><img src="./mige_webtoon/up.png" alt="up"> 별새의 여행자</h4></a>
+                                        <a href=""><p>티스텔라</p></a>
+                                        <img src="./mige_webtoon/star.png" alt="별점">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="challenge_push_webtoon2">
+                                <div class="challenge_push_webtoon_t">
+                                    <a href="#"><img src="./mige_webtoon/challenge_push.png" alt="별새의여행자"></a>
+                                    <div class="challenge_push_webtoon_t_text">
+                                        <a href=""><h4><img src="./mige_webtoon/up.png" alt="up"> 별새의 여행자</h4></a>
+                                        <a href=""><p>티스텔라</p></a>
+                                        <img src="./mige_webtoon/star.png" alt="별점">
+                                    </div>
+                                </div>
+                                <div class="challenge_push_webtoon_t">
+                                    <a href="#"><img src="./mige_webtoon/challenge_push.png" alt="별새의여행자"></a>
+                                    <div class="challenge_push_webtoon_t_text">
+                                        <a href=""><h4><img src="./mige_webtoon/up.png" alt="up"> 별새의 여행자</h4></a>
+                                        <a href=""><p>티스텔라</p></a>
+                                        <img src="./mige_webtoon/star.png" alt="별점">
+                                    </div>
+                                </div>
+                                <div class="challenge_push_webtoon_t">
+                                    <a href="#"><img src="./mige_webtoon/challenge_push.png" alt="별새의여행자"></a>
+                                    <div class="challenge_push_webtoon_t_text">
+                                        <a href=""><h4><img src="./mige_webtoon/up.png" alt="up"> 별새의 여행자</h4></a>
+                                        <a href=""><p>티스텔라</p></a>
+                                        <img src="./mige_webtoon/star.png" alt="별점">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="every">
+                    <h3>따끈따끈 업데이트 매일+</h3>
+                    <a href="">매일+ 웹툰 더보기 <span>></span></a>
+                </div>
+                <div class="everywebtoon">
+                    <a href="#"><img src="./mige_webtoon/반복.png" alt="악당이 살아가는 법"></a>
+                    <a href="#"><img src="./mige_webtoon/반복.png" alt="악당이 살아가는 법"></a>
+                    <a href="#"><img src="./mige_webtoon/반복.png" alt="악당이 살아가는 법"></a>
+                    <a href="#"><img src="./mige_webtoon/반복.png" alt="악당이 살아가는 법"></a>
+                    <a href="#"><img src="./mige_webtoon/반복.png" alt="악당이 살아가는 법"></a>
+                </div>
+                <div class="discount">
+                    <h3>웹툰 세트 할인</h3>
+                    <a href="">추천 만화 더보기 <span>></span></a>
+                </div>
+                <div class="discountwebtoon">
+                    <a href="#"><img src="./mige_webtoon/또반복.png" alt="악당이 살아가는 법"></a>
+                    <a href="#"><img src="./mige_webtoon/또반복.png" alt="악당이 살아가는 법"></a>
+                    <a href="#"><img src="./mige_webtoon/또반복.png" alt="악당이 살아가는 법"></a>
+                    <a href="#"><img src="./mige_webtoon/또반복.png" alt="악당이 살아가는 법"></a>
+                    <a href="#"><img src="./mige_webtoon/또반복.png" alt="악당이 살아가는 법"></a>
                 </div>
             </div>
             <div class="live">
