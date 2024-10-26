@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Naver_Webtoon</title>
+    <script src="https://kit.fontawesome.com/de7b35df6f.js" crossorigin="anonymous"></script>
     <style>
         *{
             box-sizing: border-box;
@@ -13,16 +14,17 @@
 
         /*header part*/
         header{
-            margin: 10px;
+            margin-left: 10px;
             width: 1246px;
             display: flex;
             flex-wrap: nowrap;
             justify-content: space-between;
+            align-items: center;
         }
         .webtoon_title{
             display: flex;
             align-items: center;
-            margin: 10px;
+            margin-left: 10px;
             padding: 10px;
         }
         .naver a{
@@ -43,11 +45,19 @@
             color: rgba(0, 0, 0, 0.3);
             text-decoration: none;
         }
-        .webtoon_title_side{
-            display: flex;
+        .webtoon_title_side a{
+            margin-left: 10px;
+        }
+        .webtoon_title_side image{
+            margin-left: 10px;
+        }
+        .webtoon_title_side input{
+            color: rgba(0, 0, 0, 0.3);
+            height: 30px;
+            width: 250px;
         }
         .webtoon_find{
-            padding: 10px;
+            margin-right: 20px;
             height: 20px;
         }
         a.login{
@@ -55,13 +65,17 @@
             font-size: small;
             width: 30px;
         }
+
         /* hr */
         hr{
             display: block;
             color: rgba(0,0,0,0.3);
         }
+        
         /*nav part*/
         nav{
+            border-top: 1px solid rgba(140, 140, 140, 0.3);
+            border-bottom: 1px solid rgba(145, 145, 145, 0.3);
             margin-left: 30px;
             width: 1246px;
             display: flex;
@@ -73,11 +87,19 @@
             height: 60px;
             display: flex;    
         }
-        h3.nav_1{
-            background-color: rgb(0, 220, 100);
+        .nav_home{
+            position: relative;
+        }
+        .nav_title img{
             width: 60px;
-            color: white;
-           
+            height: 60px;
+        }
+        .nav_1{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate( -50%, -50% );
+            color: white;     
         }
         h3.nav_2{
             margin: 20px;
@@ -466,6 +488,73 @@
             width: 390px;
             height: 130px;
         }
+        .bottomlink_title{
+            margin-top: 20px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .bottomlink_title_front{
+            display: flex;
+            margin-bottom: 10px;
+        }
+        .bottomlink_title a{
+            text-decoration: none;
+            color: rgba(0,0,0,1);
+            font-weight: 900;
+            margin-right: 15px;
+        }
+        .bottomlink_title span{
+            color: rgba(0,0,0,0.4);
+            font-weight: 500;
+            font-size: 90%;
+        }
+
+        /* footer부분 */
+        .footer{
+            width: 1246px;
+        }
+        .foot_1{
+            width: 1246px;
+            margin-left: 15px;
+            display: flex; 
+            justify-content: space-between;
+            font-size: x-small;
+            font-weight: 550;
+        }
+        .foot_2{
+            border-right: 1px solid rgba(162, 162, 162,0.5);
+        }
+        .foot_3{
+            display: flex; 
+        }
+        .foot_3_p{
+            color: rgba(0,0,0,0.5);
+            margin-top: 5px; 
+            margin-bottom: 5px;
+            padding-left: 15px;
+        }
+        .foot_3 a{
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-bottom: 20px;
+            border-right: 1px solid rgba(162, 162, 162,0.5);
+            text-decoration: none;
+            color: rgba(0,0,0,0.5);
+        }
+        .foot_4{
+            color: rgba(0,0,0,0.5);
+            font-weight: 550;
+            margin-left: 30px;
+            display: flex;
+            font-size: small;
+        }
+        .foot_4 p{
+            margin-bottom: 5px;
+            padding-right: 10px;
+            border-right: 1px solid rgba(162, 162, 162,0.5);
+        }
+
     </style>
 </head>
 <body>
@@ -479,23 +568,23 @@
         <div class="webtoon_title_side">
             <label for="find"></label>
             <input type="text" name="find" id="find" value="제목/작가로 검색할 수 있습니다.">
-            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
             <a class="login" href="#"> 로그인 </a>
-            <button><img src="./mige_webtoon/메뉴.png" alt="menu"></button>
         </div>
     </header>
-    <hr>
     <nav>
         <div class="nav_title">
-            <h3 class="nav_1">홈</h3>
+            <div class="nav_home">
+                <img src="./mige_webtoon/홈.png" alt="home">
+                <h3 class="nav_1">홈</h3>
+            </div>
             <h3 class="nav_2">웹툰</h3>
             <h3 class="nav_2">베스트도전</h3>
             <h3 class="nav_2">도전만화</h3>
             <h3 class="nav_2">마이페이지</h3>
         </div>
-        <button><img src="./mige_webtoon/creator's.png" alt=""></button>
+        <a href="#"><img src="./mige_webtoon/creator's.png" alt=""></a>
     </nav>
-    <hr>
     <main>
         <article class="one">
             <div class="one_title">
@@ -880,7 +969,58 @@
                 <a href="#"><img src="./mige_webtoon/광고.png" alt="광고"></a>
                 <a href="#"><img src="./mige_webtoon/채용.png" alt="채용"></a>
             </div>
+            <div class="bottomlink_title">
+                <div class="bottomlink_title_front">
+                    <p><a href="#"> 웹툰 </a></p>
+                    <p><a href="#"><span> |</span> 웹소설</a></p>
+                    <p><a href="#"><span> |</span> 시리즈<span> 웹소설·만화</span></a></p>
+                    <p><a href="#"><span> |</span> 시리즈온<span> 영화·방송</span></a></p>
+                </div>
+                <p><a href="#">웹툰 고객센터</a></p>
+            </div>
+            <hr>
         </article>
     </main>
+    <footer>
+        <div class="foot_1">
+            <div class="foot_2">
+                <div class="foot_3">
+                    <p><a href="#">네이버웹툰 이용약관</a></p>
+                    <p><a href="#">전용상품권 이용약관</a></p>
+                    <p><a href="#">개인정보처리방침</a></p>
+                    <p><a href="#">청소년보호정책</a></p>
+                    <p><a href="#">웹툰 고객센터</a></p>
+                    <p><a href="#">광고·사업문의</a></p>
+                </div>
+                <p class="foot_3_p">ⓒ NAVER WEBTOON Limited.</p>
+            </div>
+            <div class="foot_2_1">
+                <div class="foot_3">
+                    <p><a href="#">이용약관</a></p>
+                    <p><a href="#">개인정보처리방침 </a></p>
+                    <p><a href="#">책임의 한계와 법적고지</a></p>
+                    <p><a href="#">고객센터</a></p>
+                    <p><a href="#">결제도용신고 </a></p>
+                    <p><a href="#">저작권침해신고</a></p>
+                </div>
+                <p class="foot_3_p">ⓒ NAVER CORP.</p>
+            </div>
+        </div>
+        <br>
+        <div class="foot_4">
+            <p>네이버웹툰(유) 대표이사 김준구</p>
+            <p>&nbsp;&nbsp;사업자등록번호 669-86-01888</p>
+            <p>&nbsp;&nbsp;통신판매업 신고번호 2020-성남분담B-0719 (사업자정보확인)</p>
+        </div>
+        <div class="foot_4">
+            <p>주소 경기도 성남시 분당구 분당내곡로 131 판교테크원 타워1, 11-12층</p>
+            <p>&nbsp;&nbsp;고객센터 1588-3820</p>
+            <p>&nbsp;&nbsp;이메일 ccnaver@naver.com</p>
+            <p>&nbsp;&nbsp;호스팅 서비스 제공 NAVER Cloud</p>
+        </div>
+        <br>
+        <p class="foot_4">모든 콘텐츠의 저작권은 저작권자 또는 제공처에 있으며, 이를 무단으로 이용하는 경우 관련 법령에 따라 법적 책임을 질 수 있습니다.</p>
+        <br><br>
+    </footer>
 </body>
 </html>
