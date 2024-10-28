@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>네이버 블로그</title>
+    <link rel="stylesheet" href="./naver_blog.css">
+    <link rel="shortcut icon" type="image/x-icon" href="https://section.blog.naver.com/favicon.ico?3">
+    <script src="https://kit.fontawesome.com/4cc4112b6b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="inner">
+            <div class="logo_area">
+                <a href="index.html"><img class="logo"
+                        src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='26' height='26'%3E%3Cpath d='M26 0v26H0V0h26zM11 7.049H6.54V18.95h4.4v-6.16l4.22 6.161h4.459V7.05H15.22v6.16L11 7.05z' fill='%23FFF' fill-rule='evenodd'/%3E%3C/svg%3E"
+                        alt="naver_logo" width="34px"></a>
+                <a href="#"><img class="logo"
+                        src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='26' fill='none'%3E%3Cpath fill='%23fff' fill-rule='evenodd' d='M13.1 7.158V4c2.842.277 5.42 1.997 5.42 5.625v10.376h-3.503V9.625c0-1.407-.713-2.234-1.918-2.467Zm-9.386 2.26c.77-.887 1.915-1.425 3.48-1.425v.001c3.061 0 5.584 2.687 5.584 6.167s-2.524 6.167-5.584 6.167c-1.564 0-2.71-.537-3.48-1.425v1.098H.21V4.427h3.504v4.991Zm-.229 4.743c0 1.897 1.265 3.085 3.009 3.085s3.008-1.188 3.008-3.085c0-1.896-1.264-3.084-3.008-3.084s-3.009 1.188-3.009 3.084Zm17.111 0c0-3.481 2.756-6.168 6.19-6.168 3.433 0 6.19 2.687 6.19 6.167s-2.756 6.167-6.19 6.167c-3.433 0-6.19-2.686-6.19-6.167Zm3.283 0c0 1.795 1.264 2.983 2.907 2.983s2.907-1.19 2.907-2.984-1.264-2.982-2.907-2.982-2.907 1.187-2.907 2.982Zm23.314-5.84h-3.41v1.19c-.77-.957-1.893-1.518-3.41-1.518-3.318 0-5.747 2.71-5.747 5.934s2.43 5.933 5.746 5.933c1.518 0 2.64-.56 3.411-1.519v1.075c0 1.659-1.005 2.5-2.64 2.5h-.116v3.083c3.108 0 6.167-1.659 6.167-5.583V8.321Zm-6.236 8.539c-1.795 0-3.058-1.188-3.058-2.932s1.264-2.932 3.058-2.932c1.795 0 3.059 1.188 3.059 2.932s-1.264 2.932-3.059 2.932Z' clip-rule='evenodd'/%3E%3C/svg%3E"
+                        alt="blog_logo"></a>
+            </div>
+            <form action="" method="get">
+                <div class="search_area">
+                    <div class="search">
+
+                        <select name="search_option" id="search_option" list="search_option">
+                            <datalist>
+                                <option value="content">글</option>
+                                <option value="blog">블로그</option>
+                                <option value="nickname">별명.아이디</option>
+                            </datalist>
+                        </select>
+                        <p class="grey_bar">&nbsp;|</p>
+                        <input type="text" name="search_key" id="search_key">
+                    </div>
+                    <button type="submit" class="search_icon"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    <button type="submit" class="Integrated_search">통합검색</button>
+                </div>
+            </form>
+            <div class="login_section">
+                <button type="submit" class="login_button">로그인</button>
+                <button type="menu" class="show_menu"><img src="./img/dotted_grid.png" alt="menu" width="23px"></button>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <div class="nav_bar">
+            <div class="nav_menu">
+                <ul>
+                    <li class="no_margin"><a href="naver_blog.html" target="_self">블로그 홈</a></li>
+                    <li><a href="#" target="_self">주제별 보기</a></li>
+                    <p class="grey_bar">|</p>
+                    <li><a href="#" target="_self">이달의 블로그</a></li>
+                    <li><a href="#" target="_self">공식 블로그</a></li>
+                    <li><a href="#" target="_self">챌린지 프로그램</a></li>
+                </ul>
+            </div>
+            <div class="blog_option">
+                <button type="submit">블로그 마켓 가입</button>
+                <button type="submit" class="white_back">블로그팀 공식 블로그</button>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="main_top">
+            <div class="main_top_inner">
+                <div class="main_top_first">
+                    <div class="main_top_sub_title">
+                        <p>
+                            <span><a href="#" target="_self">핫토픽</a></span>
+                            <a href="#" target="_self"><i class="fa-solid fa-chevron-right"></i> 경복궁 야간개장</a>
+                        </p>
+                    </div>
+                    <div id="main_top_list1" class="main_top_list">
+                        <a href="#" target="_self">1</a>
+                        <a href="#" target="_self">2</a>
+                        <a href="#" target="_self">3</a>
+                        <a href="#" target="_self">4</a>
+                        <a href="#" target="_self">5</a>
+                    </div>
+                    <div id="main_top_list2" class="main_top_list">
+                        <a href="#" target="_self">1</a>
+                        <a href="#" target="_self">2</a>
+                        <a href="#" target="_self">3</a>
+                    </div>
+                </div>
+                <div class="main_top_second">
+                    <div class="article">
+                        <img src="./img/경복궁이미지.jpg" alt="경복궁이미지" width="250px" height="240px">
+
+                        <div class="article_title">
+                            <p>한복 입고 가을밤 경복궁에서~</p>
+                        </div>
+                    </div>
+                    <div class="article">
+                        <img src="./img/경복궁gif.gif" alt="경복궁이미지" width="250px" height="240px">
+
+                        <div class="article_title">
+                            <p>낮과는 또 다른 느낌의 경복궁</p>
+                        </div>
+                    </div>
+                    <div class="article">
+                        <img src="./img/경복궁이미지2.jpeg" alt="경복궁이미지" width="250px" height="240px">
+
+                        <div class="article_title">
+                            <p>한복 입고 가을밤 경복궁에서~</p>
+                        </div>
+                    </div>
+                    <div class="ad">
+                        <img src="./img/ad.png" alt="광고이미지" height="240px" width="280px">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main_contents">
+            <div class="main_left">
+                <div class="logout_status">
+                    <p>로그아웃 상태입니다 <br>로그인하여 이웃새글을 확인해보세요.</p>
+                    <ul class="main_category">
+                        <li class="no_margin"><a href="#">전체</a></li>
+                        <li><a href="#">문학·책</a></li>
+                        <li><a href="#">원예·재배</a></li>
+                        <li><a href="#">요리·레시피</a></li>
+                        <li><a href="#">자동차</a></li>
+                        <li><a href="#">패션·미용</a></li>
+                        <li><a href="#">반려동물</a></li>
+                        <li><a href="#">인테리어·DIY</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <a href="#">
+                        <img src="./img/article.jpg" alt="게시물" width="770px">
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <img src="./img/article.jpg" alt="게시물" width="770px">
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <img src="./img/article.jpg" alt="게시물" width="770px">
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <img src="./img/article.jpg" alt="게시물" width="770px">
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <img src="./img/article.jpg" alt="게시물" width="770px">
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <img src="./img/article.jpg" alt="게시물" width="770px">
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <img src="./img/article.jpg" alt="게시물" width="770px">
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <img src="./img/article.jpg" alt="게시물" width="770px">
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <img src="./img/article.jpg" alt="게시물" width="770px">
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <img src="./img/article.jpg" alt="게시물" width="770px">
+                    </a>
+                </div>
+                <div>
+                    <div class="main_content_list">
+                        <a href="#" target="_self">1</a>
+                        <a href="#" target="_self">2</a>
+                        <a href="#" target="_self">3</a>
+                        <a href="#" target="_self">4</a>
+                        <a href="#" target="_self">5</a>
+                        <a href="#" target="_self">6</a>
+                        <a href="#" target="_self">7</a>
+                        <a href="#" target="_self">8</a>
+                        <a href="#" target="_self">9</a>
+                        <a href="#" target="_self">10</a>
+                        <p class="grey_bar">&emsp;|&emsp;</p>
+                        <a href="#" target="_self" class="next">다음<i class="fa-solid fa-chevron-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="main_right">
+                <div class="main_login_section">
+                    <div class="main_login_section_inner">
+                        <p>네이버를 보다 편리하고 안전하게 이용하세요.</p>
+                        <button type="submit" class="main_login">NAVER 로그인</button>
+                        <div class="main_login_section_options">
+                            <ul>
+                                <li>아이디 찾기</li>
+                                <li>·</li>
+                                <li>비밀번호 찾기</li>
+                            </ul>
+                            <p><i class="fa-solid fa-user"></i>회원가입</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="main_ad">
+                    <img src="./img/main_ad.jpg" alt="광고이미지">
+                </div>
+                <div class="guide_img">
+                    <a href="#">
+                        <img src="./img/guide_img.png" alt="가이드 이미지" width="280px">
+                    </a>
+                </div>
+                <div class="guide_img">
+                    <a href="#">
+                        <img src="./img/guide_img2.png" alt="가이드 이미지" width="280px">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <ul class="footer_list">
+                <li><a href="#" target="_self">이용약관</a></li>
+                <p class="grey_bar">|</p>
+                <li><a href="#" target="_self">블로그 서비스 운영정책</a></li>
+                <p class="grey_bar">|</p>
+                <li><a href="#" target="_self"><b>개인정보처리방침</b></a></li>
+                <p class="grey_bar">|</p>
+                <li><a href="#" target="_self">책임의 한계와 법적고지</a></li>
+                <p class="grey_bar">|</p>
+                <li><a href="#" target="_self">글 권리 보호하기</a></li>
+                <p class="grey_bar">|</p>
+                <li><a href="#" target="_self">게시중단요청서비스</a></li>
+            </ul>
+        </div>
+        <div class="footer_company">
+            <a href="index.html" target="_self"><img src="./img/naver_full_logo.png" alt="네이버메인" width="80px"></a>
+            <p class="copy_right">Copyright ⓒ <a href="#" target="_self"><strong> Naver Corp. </strong></a>All Rights
+                Reserved.</p>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
