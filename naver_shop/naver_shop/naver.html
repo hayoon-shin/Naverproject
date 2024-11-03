@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/bf360aee8d.js" crossorigin="anonymous"></script>
+    <title>네이버쇼핑</title>
+    
+    <style>
+        * {
+            margin: 0;
+            border: 0;
+            box-sizing: border-box;
+        }
+        
+        header {
+            border: 5px black;
+            height: 100px;
+            border-top-left-radius: 10px;
+            background: rgb(3, 199, 90);
+        }
+    
+        section.tophead {
+            width: 80%;
+            height: 30px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: nowrap;
+            align-items: center;
+            align-content: center;
+            margin-left: 10%;
+        }
+        
+        section.tophead i {
+            color: white;
+            width: 20px;
+        }
+        section.tophead a{
+            color: white;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-decoration: none;
+        }
+        #naver {
+            font-size: 40px;
+            font-weight: 200;
+        }
+
+        div.tophead {
+            margin-left: 30px;
+            margin-right: 30px;
+        }
+        div.tophead a {
+            margin-right: 10px;
+            display: flex;
+            justify-content: row;
+            margin-left: 30px;
+        }
+        div.tophead_a img {
+            background-color: green;
+        }
+        div.tophead_a > a {
+            margin-right: 10px;
+        }
+        div.tophead_b {
+            display: flex;
+            justify-content: row;
+            color: white;
+        }
+        div.tophead_b > a {
+            margin-right: 10px;
+        }
+
+
+        section.middlehead{
+            width: 80%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-left: 10%;
+        }
+        #shop img{
+            background-color: white;
+            width: 30px;
+        }
+        div.middlehead_a{
+            display: flex;
+            justify-content: row;
+            align-items: center;
+            margin-top: 10px;    
+        }
+        div.middlehead_a a{
+            padding: 10px 5px;
+            text-decoration: none;
+            color: white;
+        }
+        div.middlehead_b {
+            display: flex;
+            justify-content: row;
+        }
+        div.middlehead_b a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav{
+            width: 80%;
+            height: 40px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: nowrap;
+            align-items: center;
+            align-content: center;
+            margin-left: 10%;
+        }
+        nav a {
+            color: black;
+            text-decoration: none;
+            font-size: 20px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        nav a:hover{
+            color: rgb(0, 113, 0);
+            text-decoration: underline;
+        }
+
+        div.background {
+            background-color: rgb(244, 244, 244);
+        }
+        div.img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        main {
+            width: 80%;
+            display: flex;
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+        main div{
+            width: 70%;
+        }
+        section.mainB {
+            display: flex;
+            justify-content: row;
+            justify-content: space-between;
+        }
+        #capture3 {
+            height: 300px;
+        }
+        main aside{
+            height: 2000px;
+            width: 30%;
+        }
+       
+
+        footer{
+            box-shadow: black 1000px;
+            height: 200px;
+        }
+        footer div{
+            font-size: 15px;
+        }
+        div.tac_a{
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        div.tac_a ul{
+            list-style-type: none;
+            display: flex;
+            justify-content: row;
+            justify-content: center;
+        }
+        div.tac_a a {
+            text-decoration: none;
+            color: black;
+        }
+        div.tac_b {
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: center;
+            color: gray;
+        }
+        div.tac_c p{
+            display: flex;
+            justify-content: center;
+        }
+        div.tac_d{
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+        <header>
+        <div class="headmain">
+            <section class="tophead">
+                <div class="tophead_a">
+                    <a href="#" id="naver">NAVER</a>
+                    <a href="#" id="card"><i class="fa-regular fa-credit-card"></i><label for="card">네이버페이</label></a>
+                </div>
+                <div class="tophead_b">
+                    <a href="#" id="bag"><i class="fa-solid fa-bag-shopping"></i>장바구니</a>
+                    <a href="#"><i class="fa-regular fa-message"></i></a>
+                    <a href="#"><i class="fa-solid fa-bell"></i></a>
+                    <a href="#"><i class="fa-regular fa-envelope"></i></a>
+                    <a href="#"><i class="fa-solid fa-bars"></i></a>
+                </div>
+            </section>
+        </div>
+            <section class="middlehead">
+                <div class="middlehead_a">
+                    <a href="#" id="shop"><img src="./naverImage/네이버 아이콘.png" alt="shop" width="50px"></a>
+                    <a href="#"><label for="shop">쇼핑</label></a>
+                    <a href="#">쇼핑라이브</a>
+                    <input type="text" id="search">
+                    <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    <a href="#">상세검색</a>
+                    <a href="#">카테고리 더보기</a>
+                </div>
+                <div class="middlehead_b">
+                    <a href="#">쇼핑베스트</a>
+                    <p>&nbsp;|&nbsp; </p>
+                    <a href="#">쇼핑마이</a>
+                </div>
+            </section>
+        </header>
+
+        <nav>
+            <a href="#">홈</a>
+            <a href="#">오늘행사</a>
+            <a href="#">쿠폰/혜택</a>
+            <a href="#">슈퍼적립</a>
+            <a href="#">도착보장</a>
+            <a href="#">fashionTown</a>
+            <a href="#">럭셔리</a>
+            <a href="#">리빙윈도</a>
+            <a href="#">푸드윈도</a>
+            <a href="#">장보기</a>
+            <a href="#">키즈윈도</a>
+            <a href="#">펫</a>
+            <a href="#">플레이윈도</a>
+            <a href="#">아트윈도</a>
+        </nav>
+    <div class="background">
+        <div class ="img">
+            <img src="./naverImage/캡처1.PNG" alt="image">
+        </div>
+
+        <main>
+            <div>
+                <section>
+                    <img src="./naverImage/캡처2.PNG" alt="">
+                </section>
+                <section class="mainB">
+                    <img src="./naverImage/캡처3.PNG" alt="" id="capture3">
+                    <img src="./naverImage/캡처4.PNG" alt="" width="500px">
+                </section>
+             </div>
+            <aside>
+                <img src="./naverImage/캡처4.PNG" alt="">
+                <img src="./naverImage/캡처5.PNG" alt="">
+            </aside>
+        </main>
+
+
+    </div>
+        <footer>
+            <div class="tac_a">
+                <ul>
+                    <li> <a href="#">네이버 이용약관&nbsp; </a></li>
+                    <li> <a href="#">| 네이버페이 이용약관&nbsp; </a></li>
+                    <li> <a href="#">| 개인정보처리방침&nbsp; </a></li>
+                    <li> <a href="#">| 법적고지 및 주의사항&nbsp; </a></li>
+                    <li> <a href="#">| 입점안내&nbsp; </a></li>
+                    <li> <a href="#">| 쇼핑윈도 노출안내</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">쇼핑파트너센터&nbsp; </a></li>
+                    <li><a href="#">| 스마트스토어센터&nbsp; </a></li>
+                    <li><a href="#">| 안전거래센터&nbsp; </a></li>
+                    <li><a href="#">| 전자금융거래약관&nbsp; </a></li>
+                    <li><a href="#">| 쇼핑&페이 고객센터</a></li>
+                </ul>
+            </div>
+            <div class="tac_b">
+                <p>네이버(주)는 통신판매중개자이며, 통신판매의 당사자가 아닙니다. 상품, 상품정보, 거래에 관한 의무와 책임은 판매자에게 있습니다.</p>
+            </div>
+            <div class="tac_c">
+                <p>사업자등록번호:220-81-62517 | 통신판매업신고번호 : 제2006-경기성남-0692호 | 대표이사 : 최수연 | 사업자등록정보확인 | 이메일 : helpcustomer@navver.com</p>
+                <p>주소 : 경기도 성남시 분당구 정자일로 95, NAVER 1784, 13561 | 대표전화 : 1588-3819 | 1:1문의 바로가기 | 호스팅 서비스 제공 : NAVER Cloud</p>
+            </div>
+            <div class="tac_d">
+                <img src="./naverImage/캡처6.PNG" alt="reserved">
+            </div>
+        </footer>
+</body>
+</html>
