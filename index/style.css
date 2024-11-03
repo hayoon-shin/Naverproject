@@ -1,0 +1,266 @@
+
+*{
+    font-family: sans-serif;
+}
+body {
+    padding-top: 15px;
+    width: 1280px;
+    margin: 0 auto;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+.icon_wrap {
+    display: flex;
+    justify-content: space-between;
+}
+.icon_set1 {
+    width: 100px;
+    display: flex;
+    justify-content: space-around;
+}
+.icon_set2 {
+    width: 150px;
+    display: flex;    
+    justify-content: space-around;
+}
+#search_bar {
+    width: 706px;
+    height: 58px;
+    border: 1px solid #03c75a;
+    border-radius: 33px;
+    position: absolute;
+    top: 52px;
+    left: 28%;
+}
+#search_bar .search_input {
+    width: 480px;
+    height: 58px;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    position: absolute;
+    top: 0px;
+    right: 100px;
+}
+#search_bar .logo_icon {
+    position:absolute;
+    top:15px;
+    left:30px;
+}
+#search_bar .keyboard_icon {
+    position:absolute;
+    top:10px;
+    right: 70px;
+}
+#search_bar .search_icon {
+    position:absolute;
+    top : 10px;
+    right: 20px;
+}
+.nav_bar {
+    
+}
+.nav_bar .nav_bar_ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 680px;
+    position: absolute;
+    top: 110px;
+    right: 520px;
+}
+.nav_bar .nav_bar_ul li a .icon1 {
+
+}
+.nav_bar .nav_bar_ul li a .icon1 img span {
+    text-align: center;
+    font-size: 14px;
+}
+main header {
+    width: 830px;
+    height: 130px;
+    border: 1px solid #e3e5e8;
+    border-radius: 8px;
+    position:absolute;
+    top:230px;
+}
+main header img {
+    width:830px;
+    aspect-ratio: auto 830 / 130;
+    height: 130px;
+    border-radius: 8px;
+}
+.newsstand {
+    width: 830px;
+    height: 400px;
+    position: absolute;
+    top: 376px;
+    border: 1px solid #e3e5e8;
+    border-radius: 8px;
+}
+.newsstand .newsstand_nav .newsstand_nav_ul {
+    list-style-type: none;
+    width: 500px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 18px;
+}
+.newsstand_nav2 {
+    width: 790px;
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #f5f7f8;
+    border-radius: 4px;
+    line-height: 55px;
+    margin: 0 auto;
+    
+}
+.newsstand_nav2 .newsstand_nav2_1 .news_headline {
+    display: inline-block;
+}
+table {
+    width: 790px;
+    height: 223.6px;
+    border: 1px solid #ebebeb;
+    border-collapse: collapse;
+    text-align: center;
+    border-radius: 4px;
+    margin: 0 auto;
+}
+table td {
+    border: 1px solid #ebebeb;
+}
+.news_deobogi {
+    width: 190px;
+    margin: 0 auto;
+}
+.shopping {
+   width: 830px;
+   height:600px;
+   border: 1px solid #e3e5e8;
+   border-radius: 8px;
+   position: absolute;
+   top:790px;
+}
+.shopping_nav {
+    width: 790px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.shopping .shopping_nav .shopping_nav_ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    width: 330px;
+    
+}
+.shopping .shopping_nav .shopping_nav_ul li {
+    font-size: 18px;
+}
+.shopping .but_set {
+    line-height: 55px;
+}
+.shoppingmall_set {
+    width: 248px;
+    height: 88px;
+    border-radius: 4px;
+    border: 1px solid #eceef0;
+    background-color: #f9fbfd;
+    font-size: 13px;
+}
+.mall_set1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 30px;
+}
+.mall_set2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 30px;
+}
+.mall_set3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 30px;
+}
+.shoppingmall_wrap {
+   width: 830px;
+   height:376px;
+   display: flex;
+   box-sizing: border-box;
+   
+}
+.shoppingmall_wrap_left {
+    padding-left: 20px;
+}
+.shopping_icon_set_ul {
+    
+    padding:0;
+    list-style-type: none;
+    display: flex;
+    width: 248px;
+    height: 73.6px;
+    border: 1px solid rgba(0,0,0,.05);
+    border-radius: 4px;
+    background-color: #f9fbfd;
+    font-size: 13px;
+    justify-content: space-around;
+    flex-wrap:nowrap;
+    align-items:first baseline;
+}
+.shopping_icon_set_ul div {
+    display: flex;
+    justify-content: space-evenly;
+    width : 32px;
+    height : 32px;
+    background-color: #fff;
+    border: 1px solid rgba(238,242,248,.8);
+    border-radius:50%;
+    text-align: center;
+    position:relative;
+    bottom:10px;
+}
+.shopping_icon_set_ul img {
+    position: relative;
+    top:17px; 
+    left:8.5px;
+    z-index:1;
+}
+.shoppingmall_wrap_right {
+    position:relative;
+    bottom:15px;
+    right:20px;
+}   
+.shoppingmall_list {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    width: 522px;
+    height: 375px;
+    justify-content: space-around;
+    
+    
+}
+.shoppingmall_list li {
+    margin:0px;
+    font-size: 13px;
+    text-align: center;
+}
+.shoppingmall_list li img {
+    border: 1px solid rgba(0,0,0,.06);
+    border-radius: 4px;
+}
+.todays_sale {
+    background-color: #f5f7f8;
+    width: 790px;
+    height: 50px;
+    border-radius: 4px;
+}
